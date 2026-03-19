@@ -1,10 +1,20 @@
-// Дано число. Выведите количество цифр в этом числе.
-const num = 1512;
-console.log(String(num).length);
+// Дана строка. Если в этой строке более одного символа, выведите в консоль предпоследний символ этой строки.
 
-// Даны два числа. Проверьте, что первые цифры этих чисел совпадают.
+const string = 'Something';
 
-const num1 = 2141;
-const num2 = 4353;
-console.log(String(num1)[0] === String(num2)[0]);
+const PenultimateChar = str => {
+    if (str.length > 1) {
+        return str.at(-2);
+    } else {
+        return 'Little string';
+    }
+}
+
+console.log(PenultimateChar(string));
+
+// Даны два целых числа. Проверьте, что первое число без остатка делится на второе.
+
+const num1 = 50;
+const num2 = 25;
+console.log(num1 % num2 === 0);
 
