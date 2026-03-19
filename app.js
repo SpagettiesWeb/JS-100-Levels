@@ -1,4 +1,6 @@
-// Дано число. Выведите в консоль последнюю цифру этого числа.
+// Дано число. Выведите в консоль сумму первой и последней цифры этого числа.
 
 const num = 1252;
-console.log(Number(String(Math.abs(num)).at(-1)));
+const digit = String(Math.abs(num));
+
+console.log(Number(digit[0]) + Number(digit.at(-1)));
