@@ -1,8 +1,4 @@
-// Даны два слова. Проверьте, что первые буквы этих слов совпадают.
+// Дано число. Выведите в консоль первую цифру этого числа.
 
-const string1 = 'Something';
-const string2 = 'Any';
-
-const isMatch = (str1, str2) => str1[0] === str2[0];
-
-console.log(isMatch(string1, string2));
+const num = 1252;
+console.log(Number(String(Math.abs(num))[0]));
