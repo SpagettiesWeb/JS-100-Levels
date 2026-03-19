@@ -1,5 +1,8 @@
-// Дано число. Проверьте, четное оно или нет.
+// Даны два слова. Проверьте, что первые буквы этих слов совпадают.
 
-const isOdd = num => num % 2 === 0;
-console.log(isOdd(1));
-console.log(isOdd(2));
+const string1 = 'Something';
+const string2 = 'Any';
+
+const isMatch = (str1, str2) => str1[0] === str2[0];
+
+console.log(isMatch(string1, string2));
