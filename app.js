@@ -1,7 +1,4 @@
-// Дано число. Проверьте, отрицательное оно или нет. Выведите об этом информацию в консоль.
+// Дана строка. Выведите в консоль длину этой строки.
 
-const num = 5;
-
-const isPos = num => Math.abs(num) === num;
-
-console.log(isPos(num));
+const string = 'abc';
+console.log(string.length);
