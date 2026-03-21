@@ -1,19 +1,20 @@
-// Получите массив букв этой строки.
-const str = 'abcde';
-const strArr = str.split('');
-console.log(strArr);
+// Заполните массив целыми числами от 1 до 10.
+const arr = [];
+for (let i = 1; i <= 10; i++) {
+    arr.push(i);
+}
+console.log(arr);
 
-// Получите массив цифр этого числа.
-const num = 12345;
-const numArr = String(num).split('');
-console.log(numArr);
+// Заполните массив четными числами из промежутка от 1 до 100.
+const arr2 = [];
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 === 0) {
+        arr2.push(i);
+    }
+}
+console.log(arr2);
 
-// Дано некоторое число. Переверните его.
-const num2 = 12345;
-const num2Reversed = Number(String(num2).split('').reverse().join(''));
-console.log(num2Reversed);
-
-// Найдите сумму цифр этого числа.
-const num3 = 12345;
-const num3Sum = String(num3).split('').reduce((acc, el) => acc + Number(el), 0);
-console.log(num3Sum);
+// Округлите эти дроби до одного знака в дробной части.
+const arr3 = [1.456, 2.125, 3.32, 4.1, 5.34];
+const arr3Rounded = arr3.map(el => Number(el.toFixed(1)));
+console.log(arr3Rounded);
