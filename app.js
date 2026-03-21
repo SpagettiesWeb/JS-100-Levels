@@ -1,27 +1,26 @@
-// Дан массив со строками. Оставьте в этом массиве только те строки, которые начинаются на http://
-const arr = [
-    'http://a.co', 'http://x.io',
-    'http://q.gs', 'http://t.ly',
-    'Any', 'Rofls', 'Kek',
-    'http://u.nu', 'http://v.gd',
-    'Something'
-];
+// Заполните массив случайными числами из промежутка от 1 до 100.
+const arr = [];
+for (let i = 0; i < 10; i++) {
+    const num = Math.floor(Math.random() * 100) + 1;
+    arr.push(num);
+}
+console.log(arr);
 
-const arrLinks = arr.filter(str => str.startsWith('http://'));
-console.log(arrLinks);
+// Выведите в консоль все его символы с конца.
+const num = 12345;
+const numStr = String(num);
+for (let i = numStr.length - 1; i >= 0; i--) {
+    console.log(numStr[i]);
+}
 
-// Дан массив со строками. Оставьте в этом массиве только те строки, которые заканчиваются на .html.
-const arr2 = [
-  "index.html", "42",
-  "about.html", "7",
-  "contact.html", "100",
-  "blog.html", "3.14",
-  "portfolio.html", "-5"
-];
-const arr2Html = arr2.filter(str => str.endsWith('.html'));
-console.log(arr2Html);
+// По очереди выведите в консоль подмассивы из двух элементов нашего массива:
+const arr2 = [1, 2, 3, 4, 5, 6]
+for (let i = 0; i < arr2.length; i += 2) {
+    console.log(arr2.slice(i, i + 2));
+}
 
-// Дан массив с числами. Увеличьте каждое число из массива на 10 процентов.
-const numsArr = [1,2,3,4,5,6,7,8,9,10];
-const numsArrPercent = numsArr.map(num => Number((num + num /10).toFixed(1)));
-console.log(numsArrPercent);
+// Слейте эти массивы в новый массив:
+let arr3 = [1, 2, 3];
+let arr4 = [4, 5, 6];
+const arr5 = [...arr3,...arr4];
+console.log(arr5);
